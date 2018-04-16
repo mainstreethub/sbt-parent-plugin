@@ -1,0 +1,31 @@
+# IntelliJ Files
+.idea/
+*.ipr
+*.iws
+*.iml
+
+# Eclipse Files
+.classpath
+.project
+
+# Build outputs
+target/
+
+# Vagrant outputs
+.vagrant
+
+# OS hidden files
+.DS_Store
+
+# CSV Files (stress tests)
+*.csv
+
+# Database connection info (has passwords in it)
+# See dev/setup_datasource.sh
+data-source.xml
+
+# Python
+*.py[cod]
+
+# eclipse files
+*.prefs
