@@ -3,7 +3,7 @@ import sbt.Keys._
 
 object SbtParentPlugin extends AutoPlugin {
 
-  val mshRepo = "s3://datalake.mainstreethub.com/scratch/drew/"
+  val mshRepo = "s3://artifacts.mainstreethub.com/maven/"
 
   override lazy val projectSettings = Seq(
     organization := "com.mainstreethub",
