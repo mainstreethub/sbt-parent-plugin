@@ -13,6 +13,6 @@ object SbtParentPlugin extends AutoPlugin {
       else
         Some("Mainstreethub Releases" at mshRepo + "releases")
     },
-    resolvers += "Mainstreethub releases" at mshRepo + "releases"
+    resolvers += "Mainstreethub Releases" at mshRepo + "releases"
   )
 }
