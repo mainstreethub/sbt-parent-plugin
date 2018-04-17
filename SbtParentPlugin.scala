@@ -13,6 +13,8 @@ object SbtParentPlugin extends AutoPlugin {
       else
         Some("Mainstreethub Releases" at mshRepo + "releases")
     },
-    resolvers += "Mainstreethub releases" at mshRepo + "releases"
+    resolvers += "Mainstreethub Releases" at mshRepo + "releases",
+    scalastyleFailOnError := true,
+    scalastyleConfigUrl := Some(url("https://raw.githubusercontent.com/mainstreethub/sbt-parent-plugin/master/scalastyle-config.xml"))
   )
 }

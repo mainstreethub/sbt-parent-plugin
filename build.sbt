@@ -6,7 +6,6 @@ lazy val root = (project in file("."))
     organization := "com.mainstreethub",
     scalaVersion := "2.10.4",
     publishMavenStyle := false,
-    publishTo := sonatypePublishTo.value
+    publishTo := sonatypePublishTo.value,
+    addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "1.0.0")
   )
-
-addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "1.0.0")
