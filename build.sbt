@@ -7,5 +7,6 @@ lazy val root = (project in file("."))
     scalaVersion := "2.10.4",
     publishMavenStyle := false,
     publishTo := sonatypePublishTo.value,
+    pgpPassphrase := Some(Array('a', 'b', 'c')),
     addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "1.0.0")
   )
