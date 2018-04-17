@@ -1,4 +1,4 @@
-import org.scalastyle.sbt.ScalastylePlugin.autoImport.{scalastyleFailOnWarning, scalastyleConfigUrl}
+import org.scalastyle.sbt.ScalastylePlugin.autoImport.{scalastyle, scalastyleFailOnWarning, scalastyleConfigUrl}
 import sbt._
 import sbt.Keys._
 
@@ -15,7 +15,7 @@ object SbtParentPlugin extends AutoPlugin {
         Some("Mainstreethub Releases" at mshRepo + "releases")
     },
     resolvers += "Mainstreethub Releases" at mshRepo + "releases",
-    scalastyleFailOnWarning := true,
-    scalastyleConfigUrl := Some(url("https://raw.githubusercontent.com/mainstreethub/sbt-parent-plugin/master/scalastyle-config.xml"))
+    scalastyleFailOnWarning in Compile := true,
+    scalastyleConfigUrl in Compile := Some(url("https://raw.githubusercontent.com/mainstreethub/sbt-parent-plugin/master/scalastyle-config.xml"))
   )
 }
